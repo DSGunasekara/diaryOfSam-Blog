@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import firebase from "firebase/app";
-import "firebase/functions";
+// import firebase from "firebase/app";
+// import "firebase/functions";
 export default {
   name: "Admin",
   data() {
@@ -27,9 +27,10 @@ export default {
   },
   methods: {
     async addAdmin() {
-      const addAdmin = await firebase.functions().httpsCallable("addAdminRole");
-      const result = await addAdmin({ email: this.adminEmail });
-      this.functionMsg = result.data.message;
+      // const addAdmin = await firebase.functions().httpsCallable("addAdminRole");
+      // const result = await addAdmin({ email: this.adminEmail });
+      this.functionMsg = true;
+      // this.functionMsg = result.data.message;
     },
   },
 };

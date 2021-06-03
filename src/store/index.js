@@ -65,8 +65,8 @@ export default new Vuex.Store({
       state.user = payload;
     },
     setProfileAdmin(state, payload) {
-      state.profileAdmin = payload;
-      console.log(state.profileAdmin);
+      state.profileAdmin = true;
+      console.log(payload);
     },
     setProfileInfo(state, doc) {
       state.profileId = doc.id;

@@ -1,0 +1,111 @@
+[debug] [2021-06-03T16:46:50.699Z] ----------------------------------------------------------------------
+[debug] [2021-06-03T16:46:50.700Z] Command:       /usr/local/bin/node /opt/homebrew/bin/firebase init
+[debug] [2021-06-03T16:46:50.701Z] CLI Version:   9.12.1
+[debug] [2021-06-03T16:46:50.701Z] Platform:      darwin
+[debug] [2021-06-03T16:46:50.701Z] Node Version:  v14.17.0
+[debug] [2021-06-03T16:46:50.702Z] Time:          Thu Jun 03 2021 22:16:50 GMT+0530 (India Standard Time)
+[debug] [2021-06-03T16:46:50.702Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-03T16:46:50.708Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-03T16:46:50.708Z] > authorizing via signed-in user (adsgunasekara18@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/dilain/Projects/github/blog-app/FireBlogs-YouTube
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using diaryofsam-ab961. 
+[debug] [2021-06-03T16:47:02.106Z] > refreshing access token with scopes: []
+[debug] [2021-06-03T16:47:02.106Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-03T16:47:02.318Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 03 Jun 2021 16:47:02 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-03T16:47:02.371Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/diaryofsam-ab961 [none]
+[debug] [2021-06-03T16:47:02.780Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/diaryofsam-ab961 200
+[debug] [2021-06-03T16:47:02.781Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/diaryofsam-ab961 {"projectId":"diaryofsam-ab961","projectNumber":"687823357552","displayName":"diaryOfSam","name":"projects/diaryofsam-ab961","resources":{"hostingSite":"diaryofsam-ab961","storageBucket":"diaryofsam-ab961.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Firestore Setup
+[debug] [2021-06-03T16:47:02.784Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-03T16:47:02.784Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-03T16:47:02.959Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Thu, 03 Jun 2021 16:47:02 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-03T16:47:03.007Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/diaryofsam-ab961/services/firestore.googleapis.com  
+ 
+[debug] [2021-06-03T16:47:04.511Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 16:47:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-03T16:47:04.515Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/diaryofsam-ab961  
+ 
+[debug] [2021-06-03T16:47:05.132Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 16:47:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-03T16:47:05.133Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-06-03T16:47:05.134Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-03T16:47:05.135Z] > authorizing via signed-in user (adsgunasekara18@gmail.com)
+[debug] [2021-06-03T16:47:05.135Z] [iam] checking project diaryofsam-ab961 for permissions ["firebase.projects.get"]
+[debug] [2021-06-03T16:47:05.136Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/diaryofsam-ab961:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-06-03T16:47:06.309Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 16:47:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1018","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-06-03T16:47:24.541Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/diaryofsam-ab961/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-06-03T16:47:25.908Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 16:47:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-03T16:47:25.911Z] Found ruleset: projects/diaryofsam-ab961/rulesets/46ed0f0b-bb99-4534-8918-698bb065e1c5
+[debug] [2021-06-03T16:47:25.912Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/diaryofsam-ab961/rulesets/46ed0f0b-bb99-4534-8918-698bb065e1c5  
+ 
+[debug] [2021-06-03T16:47:27.244Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 16:47:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-06-03T16:48:08.376Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/diaryofsam-ab961/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-06-03T16:48:08.377Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/diaryofsam-ab961/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-06-03T16:48:09.971Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 16:48:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-03T16:48:09.975Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 03 Jun 2021 16:48:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-06-03T16:48:45.019Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-06-03T16:48:45.176Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-06-03T16:48:45.177Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.6.3","browserURL":"https://www.gstatic.com/firebasejs/8.6.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.6.3/firebase.tgz"},"live":{"version":"8.6","browserURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.6.3/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.6.3/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.6.3/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.6.3/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.6.3/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.6.3/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.6.3/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.memory.js"}}
+[info] ✔  Wrote dist/index.html 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-06-03T16:48:54.349Z] Error: EISDIR: illegal operation on a directory, open '/Users/dilain/Projects/github/blog-app/FireBlogs-YouTube'
+    at Object.openSync (fs.js:498:3)
+    at Object.writeFileSync (fs.js:1524:35)
+    at Object.createFileSync (/opt/homebrew/lib/node_modules/firebase-tools/node_modules/fs-extra/lib/ensure/file.js:43:6)
+    at Config.writeProjectFile (/opt/homebrew/lib/node_modules/firebase-tools/lib/config.js:153:12)
+    at Object.doSetup [as storage] (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/features/storage.js:25:12)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async init (/opt/homebrew/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: An unexpected error has occurred.
